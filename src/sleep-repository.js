@@ -1,6 +1,6 @@
 class SleepRepository {
   constructor (sleepData) {
-    this.sleepData = sleepData
+    this.sleepData = sleepData;
   }
 
   returnUserSleepData(id) {
@@ -12,9 +12,8 @@ class SleepRepository {
     return found.reduce((acc, total) => acc + total.hoursSlept, 0) / found.length;
   }
 
-
   returnAverageSleepForAllUsers() {
-    return Math.round(10 * this.sleepData.reduce((acc, total) => acc + total.sleepQuality, 0) / this.sleepData.length) / 10
+    return Math.round(10 * this.sleepData.reduce((acc, total) => acc + total.sleepQuality, 0) / this.sleepData.length) / 10;
   }
 
   returnUserSleepQualityAveOver3(firstDate) {
@@ -25,8 +24,8 @@ class SleepRepository {
       let index = data1.findIndex(el => el.date === firstDate);
       return data1.splice(index, 7);
     })
-    let final = {}
-    let array3 = array2.map(el => el.reduce((acc, total) => final[total.userID] = (acc + total.sleepQuality), 0))
+    let final = {};
+    let array3 = array2.map(el => el.reduce((acc, total) => final[total.userID] = (acc + total.sleepQuality), 0));
     return Object.keys(final).filter(key => final[key] > 21).map(Number);
   }
 

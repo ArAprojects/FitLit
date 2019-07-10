@@ -9,7 +9,7 @@ class Hydration {
   }
 
   returnAWeek(firstDate) {
-    let data = [...this.currentUser]
+    let data = [...this.currentUser];
     let index = data.findIndex(el => el.date === firstDate);
     return data.splice(index, 7);
   }
@@ -18,6 +18,7 @@ class Hydration {
     const week = this.returnAWeek(firstDate);
     return week.map(el => el.numOunces);
   }
+  
 }
 
 if (typeof module !== 'undefined') {

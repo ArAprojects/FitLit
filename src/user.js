@@ -1,4 +1,3 @@
-
 class User {
   constructor(currentUser) {
     this.id = currentUser.id;
@@ -11,7 +10,7 @@ class User {
   }
 
   returnFirstName() {
-    return this.name.split(' ')[0]
+    return this.name.split(' ')[0];
   }
 
 }
