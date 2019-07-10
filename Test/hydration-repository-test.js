@@ -4,7 +4,8 @@ const hydrationData = require('../data/hydration-test-data');
 const HydrationRepository = require('../src/hydration-repository');
 
 describe("Hydration-Repository", () => {
-
+  let hydrationRepository
+  
   beforeEach(function() {
     hydrationRepository = new HydrationRepository(hydrationData);
   });

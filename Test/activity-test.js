@@ -7,21 +7,19 @@ const UserRepository = require('../src/user-repository');
 const Activity = require('../src/activity');
 const ActivityRepository = require('../src/activity-repository')
 
-
 describe("Activity", () => {
   let userRepository
   let activityRepository
   let activity1
+  
   beforeEach(function() {
     userRepository = new UserRepository(userData1)
     activityRepository = new ActivityRepository(activityData);
     activity1 = new Activity(userRepository.returnUserData(1), activityRepository.returnUserActivityData(1));
-  
   });
 
   it("should be a function", () => {
     expect(Activity).to.be.a("function")
-
   });
 
   it("should be an instance", () => {
@@ -89,6 +87,6 @@ describe("Activity", () => {
 
   it("should return percentage of the US walked", () => {
     expect(activity1.milesWalkedUS()).to.eql(0.31)
-  })
+  });
 
 });
