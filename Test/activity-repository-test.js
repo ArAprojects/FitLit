@@ -1,11 +1,11 @@
 const chai = require('chai');
 const expect = chai.expect;
 const activityData = require('../data/activity-test-data');
-// const sleepData2 = require('../data/sleep-test-data-2');
 const ActivityRepository = require('../src/activity-repository');
 
 describe("Activity-Repository", () => {
   let activityRepository
+  
   beforeEach(function() {
     activityRepository = new ActivityRepository(activityData);
   });

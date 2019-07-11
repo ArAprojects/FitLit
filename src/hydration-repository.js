@@ -7,7 +7,7 @@ class HydrationRepository {
     return this.hydrationData.filter(el => el.userID === id);
   }
 
-}
+};
 
 if (typeof module !== 'undefined') {
   module.exports = HydrationRepository;

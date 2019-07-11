@@ -1,9 +1,7 @@
-// const SleepRepository = require("../src/sleep-repository")
-
 class Sleep {
   constructor (currentUser ) {
-    this.currentUser = currentUser
-    this.rested = false
+    this.currentUser = currentUser;
+    this.rested = false;
   }
 
   userSleepAve() {
@@ -23,19 +21,19 @@ class Sleep {
   }
 
   returnAWeek(firstDate) {
-    let data = [...this.currentUser]
+    let data = [...this.currentUser];
     let index = data.findIndex(el => el.date === firstDate);
     return data.splice(index, 7);
   }
 
   userWeeklySleep(firstDate) {
     let week = this.returnAWeek(firstDate);
-    return week.map(el => el.hoursSlept)
+    return week.map(el => el.hoursSlept);
   }
 
   userWeeklyQualitySleep(firstDate) {
     let week = this.returnAWeek(firstDate);
-    return week.map(el => el.sleepQuality)
+    return week.map(el => el.sleepQuality);
   }
 
   checkRested() {
@@ -53,7 +51,6 @@ class Sleep {
       return "Rested Status: Not Getting enough rest!"
     }
   }
-
 
 }
 

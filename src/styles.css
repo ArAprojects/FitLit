@@ -3,13 +3,13 @@
 }
 
 body {
-  text-rendering: optimizeSpeed;
-  margin: 3%;
-  margin-top: 0;
   background: #00515b url(sun.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 3%;
+  margin-top: 0;
+  text-rendering: optimizeSpeed;
 }
 
 .welcome-message {
@@ -72,15 +72,15 @@ body {
 
 .list-item {
   background-color: #404055;
-  color: #fff;
-  margin-top: 15px;
-  padding: 8px 0;
-  list-style-type: none;
   border-color: #404055;
   border-width: 2px;
+  color: #fff;
   font-size: 1em;
-  width: 100%;
+  margin-top: 15px;
   outline: 0;
+  padding: 8px 0;
+  list-style-type: none;
+  width: 100%;
 }
 
 .list-item--active {
@@ -132,16 +132,16 @@ body {
 }
 
 .user-profile {
+  background-color: rgba(28, 28, 37, 0.6);
   margin: auto;
   position: relative;
   padding: 50px;
-  background-color: rgba(28, 28, 37, 0.6);
 }
 
 img {
-  width: 40px;
-  vertical-align: middle;
   margin-left: 15px;
+  vertical-align: middle;
+  width: 40px;
 }
 
 .sleepQuality-line-chart,
@@ -163,5 +163,5 @@ img {
 .america-width {
   margin: auto;
   margin-top: 40px;
-  text-align:center;
+  text-align: center;
 }
