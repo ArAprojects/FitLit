@@ -183,10 +183,9 @@ $(document).ready(function() {
   function displayRested(sleep) {
     sleep.checkRested();
     if (sleep.rested === true) {
-      $('#restedSvg').attr('src','happy.svg');
-    }
-    else {
-      $('#restedSvg').attr('src','sad.svg');
+      $('#restedSvg').attr('src', 'happy.svg');
+    } else {
+      $('#restedSvg').attr('src', 'sad.svg');
     }
   }
 
@@ -496,7 +495,7 @@ $(document).ready(function() {
             fontSize: 16,
             maxTicksLimit: 12,
             min: 0,
-            max: 12000,
+            max: 16000,
             stepSize: 2000,
           }
         }]
