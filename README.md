@@ -18,6 +18,7 @@ Fitlit is a project we created to demonstrate our understanding of data manipula
 
 - HTML/CSS
 - JavaScript
+- Mocha/Chai
 - jQuery
 - Charts.js
 
