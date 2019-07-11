@@ -7,7 +7,12 @@ Fitlit is a project we created to demonstrate our understanding of data manipula
 - Alek Aker
 - Samantha Freeman
 
-### Link
+### Setup
+
+1. Fork this repo, found in the top right corner.
+2. In your terminal run git clone (replace the [ ] with the terminal command arguments): git clone [remote-address]
+3. Once you have cloned the repo, change into the directory and install the library dependencies. Run npm install to install project dependencies.
+4. Type the following to view page: src/open index.html
 
 ### Built with
 
